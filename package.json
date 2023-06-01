@@ -1,7 +1,14 @@
 {
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/sass/main.scss -o ./dist/main.css --watch"
+  },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
     "postcss": "^8.4.23",
+    "postcss-easy-import": "^4.0.0",
+    "postcss-import": "^15.1.0",
+    "postcss-nested": "^6.0.1",
+    "postcss-scss": "^4.0.6",
     "tailwindcss": "^3.3.2"
   }
 }
