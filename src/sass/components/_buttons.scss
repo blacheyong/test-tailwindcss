@@ -1,10 +1,17 @@
 @layer components {
   .btn {
-    @apply bg-blue-medium hover:bg-bell-primary font-base text-center text-md text-white py-10px px-20px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-5;
+    @apply bg-blue-medium hover:bg-bell-primary font-base text-center text-md text-white px-20px py-10px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-5;
   }
 
   .btn.btn-secondary {
     @apply bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary;
+  }
+
+  .btn.btn-sm {
+    @apply text-sm py-8px px-18px;
+  }
+  .btn.btn-lg {
+    @apply text-lg px-24px py-10px;
   }
 
   .btn.disabled {
