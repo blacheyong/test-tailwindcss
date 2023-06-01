@@ -7,10 +7,15 @@
   <title>Test Tailwind</title>
   <link href="./dist/main.css" rel="stylesheet">
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline text-blue">
+<body style="padding: 30px;">
+  <h1 class="text-3xl font-bold underline text-blue mb-10">
     Hello world!
   </h1>
-  <button type="button" class="btn">Test button</button>
+  <div class="flex justify-between">
+    <button type="button" class="btn">Primary</button>
+    <button type="button" class="btn disabled">Primary Disabled</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-secondary disabled">Secondary Disabled</button>
+  </div>
 </body>
 </html>
