@@ -712,6 +712,10 @@ label {
   margin-bottom: 5px;
 }
 
+.ml-10 {
+  margin-left: 2.5rem;
+}
+
 .flex {
   display: flex;
 }
@@ -734,16 +738,36 @@ label {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
 }
 
+.justify-items-start {
+  justify-items: start;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .gap-40 {
   gap: 10rem;
+}
+
+.gap-20 {
+  gap: 5rem;
 }
 
 .rounded {
