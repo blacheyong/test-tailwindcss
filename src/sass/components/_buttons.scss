@@ -1,23 +1,30 @@
 @layer components {
   .btn {
-    @apply bg-blue-medium hover:bg-bell-primary font-base text-center text-md text-white px-20px py-10px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-5;
+    @apply bg-blue-medium hover:bg-bell-primary border-1 border-blue-medium hover:border-bell-primary font-base text-center text-md text-white px-19px py-9px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-3 focus:outline-none;
   }
 
-  .btn.btn-secondary {
-    @apply bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary;
+  .btn-primary {
+    @apply bg-gradient-to-b from-blue-medium-90 to-blue-medium hover:from-bell-primary-90 hover:to-bell-primary;
   }
 
-  .btn.btn-sm {
-    @apply text-sm py-8px px-18px;
-  }
-  .btn.btn-lg {
-    @apply text-lg px-24px py-10px;
+  .btn-secondary {
+    @apply bg-transparent hover:bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary;
   }
 
-  .btn.disabled {
-    @apply bg-disabled-light pointer-events-none;
+  .btn-sm {
+    @apply text-sm py-7px px-17px;
   }
-  .btn-secondary.disabled {
+  .btn-lg {
+    @apply text-lg px-23px py-9px;
+  }
+
+  .btn:disabled {
+    @apply bg-disabled-light border-disabled-light select-none pointer-events-none focus:ring-0 focus:ring-offset-0;
+  }
+  .btn-primary:disabled {
+    @apply bg-gradient-to-b from-disabled-light to-disabled-light;
+  }
+  .btn-secondary:disabled {
     @apply bg-transparent text-disabled-dark border-disabled-light;
   }
 }

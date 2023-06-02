@@ -1,0 +1,15 @@
+@layer components {
+    .form-group {
+        @apply inline-flex flex-col;
+    }
+}
+
+@layer base {
+    input[type='text'] {
+        @apply border-1 border-gray-medium focus:border-bell-primary focus:outline-0 font-base px-10px py-8px rounded text-14;
+    }
+
+    label {
+        @apply font-base font-bold mb-5px text-gray-dark text-14;
+    }
+}

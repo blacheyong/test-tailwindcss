@@ -12,16 +12,26 @@
     Hello world!
   </h1>
   <div class="flex items-center justify-between my-10">
-    <button type="button" class="btn">Primary</button>
-    <button type="button" class="btn disabled">Primary Disabled</button>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-primary" disabled>Primary Disabled</button>
     <button type="button" class="btn btn-secondary">Secondary</button>
-    <button type="button" class="btn btn-secondary disabled">Secondary Disabled</button>
+    <button type="button" class="btn btn-secondary" disabled>Secondary Disabled</button>
   </div>
   <div class="flex items-center justify-between my-10">
-    <button type="button" class="btn btn-sm">Small</button>
-    <button type="button" class="btn btn-sm disabled">Small Disabled</button>
-    <button type="button" class="btn btn-lg">Large</button>
-    <button type="button" class="btn btn-lg disabled">Large Disabled</button>
+    <button type="button" class="btn btn-primary btn-sm">Small</button>
+    <button type="button" class="btn btn-primary btn-sm disabled" disabled>Small Disabled</button>
+    <button type="button" class="btn btn-primary btn-lg">Large</button>
+    <button type="button" class="btn btn-primary btn-lg" disabled>Large Disabled</button>
   </div>
+  <form class="my-10 grid grid-cols-2 gap-40">
+    <div class="form-group mb-4">
+      <label>Input text</label>
+      <input type="text" placeholder="Text" />
+    </div>
+    <div class="form-group mb-4">
+      <label>Input text (disabled)</label>
+      <input type="text" placeholder="Text" disabled />
+    </div>
+  </form>
 </body>
 </html>
