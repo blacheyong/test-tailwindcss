@@ -11,6 +11,20 @@
     @apply bg-transparent hover:bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary;
   }
 
+  .btn-link {
+    @apply bg-transparent hover:bg-transparent border-0 p-0 relative rounded-3px text-14 text-blue-medium hover:text-bell-primary after:content-[''] after:block after:h-px after:bg-blue-medium hover:after:bg-bell-primary after:absolute after:bottom-0 after:w-full;
+  }
+
+  .btn-operational {
+    @apply bg-transparent hover:bg-transparent border-0 font-bold  p-0 text-12 text-blue-medium hover:text-bell-primary flex items-center;
+  }
+  .btn-operational svg {
+    @apply max-w-16px ml-5px hover:fill-bell-primary;
+  }
+  .btn-operational--left svg {
+    @apply mr-5px;
+  }
+
   .btn-sm {
     @apply text-sm py-7px px-17px;
   }
@@ -19,7 +33,7 @@
   }
 
   .btn:disabled {
-    @apply bg-disabled-light border-disabled-light select-none pointer-events-none focus:ring-0 focus:ring-offset-0;
+    @apply bg-disabled-light border-disabled-light cursor-not-allowed select-none focus:ring-0 focus:ring-offset-0;
   }
   .btn-primary:disabled {
     @apply bg-gradient-to-b from-disabled-light to-disabled-light;

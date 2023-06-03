@@ -5,6 +5,9 @@ const plugin = require('tailwindcss/plugin')
 export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const theme = {
   extend: {
+    borderRadius: {
+      '3px': '3px'
+    },
     borderWidth: {
       '1': '1px'
     },
@@ -40,10 +43,14 @@ export const theme = {
       sm: ['13px', '14px'],
       md: ['15px', '16px'],
       lg: ['18px', '20px'],
+      '12': ['12px', '14px'],
       '14': ['14px', '18px']
     },
     margin: {
       '5px': '5px'
+    },
+    maxWidth: {
+      '16px': '16px'
     },
     padding: {
       '7px': '7px',
