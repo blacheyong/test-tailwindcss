@@ -2,5 +2,12 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
+
+@import "settings/_fonts.scss";
+
+
+@import "base/_typography.scss";
+
+
 @import "components/_buttons.scss";
 @import "components/_form.scss";

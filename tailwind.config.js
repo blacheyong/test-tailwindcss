@@ -1,6 +1,3 @@
-// import variables from './src/sass/variables.module.scss'
-const plugin = require('tailwindcss/plugin')
-
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const theme = {
@@ -38,13 +35,19 @@ export const theme = {
     },
     fontFamily: {
       'base': ['Arial', 'Helvetica', 'sans-serif'],
+      'bell-slim': ['bell-slim', 'Helvetica', 'Arial', 'sans-serif'],
+      'bell-slim-black': ['bell-slim-black', 'Helvetica', 'Arial', 'sans-serif']
     },
     fontSize: {
       sm: ['13px', '14px'],
       md: ['15px', '16px'],
       lg: ['18px', '20px'],
       '12': ['12px', '14px'],
-      '14': ['14px', '18px']
+      '14': ['14px', '18px'],
+      '40': ['40px', '46px']
+    },
+    letterSpacing: {
+      tightest: '-0.7px'
     },
     margin: {
       '5px': '5px'
@@ -70,12 +73,3 @@ export const theme = {
     }
   }
 }
-export const plugins = [ // doesnt work atm, need to import @tailwindcss/typography ?
-  plugin(function({ addBase, theme }) {
-    addBase({
-      'h1': { fontSize: theme('fontSize.sm') },
-      'h2': { fontSize: theme('fontSize.xl') },
-      'h3': { fontSize: theme('fontSize.lg') },
-    })
-  })
-]
