@@ -5,8 +5,12 @@
 }
 
 @layer base {
-    input[type='text'] {
-        @apply border-1 border-gray-medium focus:border-bell-primary focus:outline-0 font-base px-10px py-8px rounded text-14;
+    input[type='text'], input[type='date'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], input[type='week'] {
+        @apply border-1 border-gray-medium focus:border-bell-primary focus:outline-0 font-base px-10px py-8px rounded text-14 text-gray-medium;
+    }
+
+    input[type='text']:disabled, input[type='date']:disabled, input[type='datetime-local']:disabled, input[type='email']:disabled, input[type='month']:disabled, input[type='number']:disabled, input[type='password']:disabled, input[type='search']:disabled, input[type='tel']:disabled, input[type='time']:disabled, input[type='url']:disabled, input[type='week']:disabled {
+        @apply bg-light border-gray-keyline;
     }
 
     label {

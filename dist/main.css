@@ -481,7 +481,7 @@ h1 {
   letter-spacing: -0.7px;
 }
 
-input[type='text'] {
+input[type='text'], input[type='date'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], input[type='week'] {
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -493,12 +493,21 @@ input[type='text'] {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
 }
 
-input[type='text']:focus {
+input[type='text']:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='time']:focus, input[type='url']:focus, input[type='week']:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 84 154 / var(--tw-border-opacity));
   outline-width: 0px;
+}
+
+input[type='text']:disabled, input[type='date']:disabled, input[type='datetime-local']:disabled, input[type='email']:disabled, input[type='month']:disabled, input[type='number']:disabled, input[type='password']:disabled, input[type='search']:disabled, input[type='tel']:disabled, input[type='time']:disabled, input[type='url']:disabled, input[type='week']:disabled {
+  --tw-border-opacity: 1;
+  border-color: rgb(212 212 212 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }
 
 label {
@@ -984,6 +993,11 @@ label {
 .bg-disabled-light {
   --tw-bg-opacity: 1;
   background-color: rgb(186 190 194 / var(--tw-bg-opacity));
+}
+
+.bg-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(244 244 244 / var(--tw-bg-opacity));
 }
 
 .bg-transparent {
