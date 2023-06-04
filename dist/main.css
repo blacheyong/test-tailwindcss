@@ -425,11 +425,11 @@ video {
 @font-face {
   font-family: 'bell-slim';
 
-  src: url('../../fonts/bellslim_regular-webfont.eot');
+  src: url('./fonts/bellslim_regular-webfont.eot');
 
-  src: url('../../fonts/bellslim_regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/bellslim_regular-webfont.woff') format('woff'),
-        url('../../fonts/bellslim_regular-webfont.ttf') format('truetype');
+  src: url('./fonts/bellslim_regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/bellslim_regular-webfont.woff') format('woff'),
+        url('./fonts/bellslim_regular-webfont.ttf') format('truetype');
 
   font-weight: 200;
 
@@ -439,11 +439,11 @@ video {
 @font-face {
   font-family: 'bell-slim';
 
-  src: url('../../fonts/bellslim_medium-webfont.eot');
+  src: url('./fonts/bellslim_medium-webfont.eot');
 
-  src: url('../../fonts/bellslim_medium-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/bellslim_medium-webfont.woff') format('woff'),
-        url('../../fonts/bellslim_medium-webfont.ttf') format('truetype');
+  src: url('./fonts/bellslim_medium-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/bellslim_medium-webfont.woff') format('woff'),
+        url('./fonts/bellslim_medium-webfont.ttf') format('truetype');
 
   font-weight: normal;
 
@@ -453,11 +453,11 @@ video {
 @font-face {
   font-family: 'bell-slim';
 
-  src: url('../../fonts/bellslim_semibold-webfont.eot');
+  src: url('./fonts/bellslim_semibold-webfont.eot');
 
-  src: url('../../fonts/bellslim_semibold-webfont.eot?#iefix') format('embedded-opentype'),
-        url('../../fonts/bellslim_semibold-webfont.woff') format('woff'),
-        url('../../fonts/bellslim_semibold-webfont.ttf') format('truetype');
+  src: url('./fonts/bellslim_semibold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/bellslim_semibold-webfont.woff') format('woff'),
+        url('./fonts/bellslim_semibold-webfont.ttf') format('truetype');
 
   font-weight: 700;
 
@@ -467,7 +467,7 @@ video {
 @font-face {
   font-family: 'bell-slim-black';
 
-  src: url('../../fonts/bellslim_black-webfont.woff') format('woff'), url('../../fonts/bellslim_black-webfont.woff2') format('woff2');
+  src: url('./fonts/bellslim_black-webfont.woff') format('woff'), url('../../fonts/bellslim_black-webfont.woff2') format('woff2');
 
   font-weight: normal;
 
