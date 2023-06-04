@@ -777,6 +777,30 @@ label {
   background-color: rgb(0 84 154 / var(--tw-bg-opacity));
 }
 
+:is(.dark .btn-link) {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .btn-link)::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+:is(.dark .btn-link:hover) {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(228 240 249 / var(--tw-text-opacity));
+}
+
+:is(.dark .btn-link:hover)::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 240 249 / var(--tw-bg-opacity));
+}
+
 .btn-operational {
   display: flex;
   align-items: center;
@@ -796,6 +820,18 @@ label {
   color: rgb(0 84 154 / var(--tw-text-opacity));
 }
 
+:is(.dark .btn-operational) {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+:is(.dark .btn-operational:hover) {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(228 240 249 / var(--tw-text-opacity));
+}
+
 .btn-operational svg {
   margin-left: 5px;
   max-width: 16px;
@@ -803,6 +839,10 @@ label {
 
 .btn-operational svg:hover {
   fill: #00549A;
+}
+
+:is(.dark .btn-operational svg:hover) {
+  fill: #E4F0F9;
 }
 
 .btn-operational--left svg {
@@ -827,7 +867,7 @@ label {
   line-height: 20px;
 }
 
-.btn:disabled {
+.btn:disabled, .btn.disabled {
   cursor: not-allowed;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -838,20 +878,20 @@ label {
   background-color: rgb(186 190 194 / var(--tw-bg-opacity));
 }
 
-.btn:disabled:focus {
+.btn:disabled:focus, .btn.disabled:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(0px + var(--tw-ring-offset-width)) var(--tw-ring-color);
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
   --tw-ring-offset-width: 0px;
 }
 
-:is(.dark .btn:disabled) {
+:is(.dark .btn:disabled),:is(.dark  .btn.disabled) {
   border-color: rgba(255, 255, 255, .3);
   background-color: rgba(255, 255, 255, .3);
   color: rgba(194, 206, 223, 0.5);
 }
 
-.btn-primary:disabled {
+.btn-primary:disabled, .btn-primary.disabled {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
   --tw-gradient-from: #BABEC2 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(186 190 194 / 0) var(--tw-gradient-to-position);
@@ -859,7 +899,7 @@ label {
   --tw-gradient-to: #BABEC2 var(--tw-gradient-to-position);
 }
 
-:is(.dark .btn-primary:disabled) {
+:is(.dark .btn-primary:disabled),:is(.dark  .btn-primary.disabled) {
   border-color: rgba(255, 255, 255, .3);
   --tw-gradient-from: rgba(255, 255, 255, .3) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(255, 255, 255, 0) var(--tw-gradient-to-position);
@@ -868,7 +908,7 @@ label {
   color: rgba(194, 206, 223, 0.5);
 }
 
-.btn-secondary:disabled {
+.btn-secondary:disabled, .btn-secondary.disabled {
   --tw-border-opacity: 1;
   border-color: rgb(186 190 194 / var(--tw-border-opacity));
   background-color: transparent;
@@ -876,10 +916,51 @@ label {
   color: rgb(141 141 141 / var(--tw-text-opacity));
 }
 
-:is(.dark .btn-secondary:disabled) {
+:is(.dark .btn-secondary:disabled),:is(.dark  .btn-secondary.disabled) {
   border-color: rgba(194, 206, 223, 0.5);
   background-color: transparent;
   color: rgba(194, 206, 223, 0.5);
+}
+
+.btn-link:disabled, .btn-link.disabled {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(186 190 194 / var(--tw-text-opacity));
+}
+
+.btn-link:disabled::after, .btn-link.disabled::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 190 194 / var(--tw-bg-opacity));
+}
+
+:is(.dark .btn-link:disabled),:is(.dark  .btn-link.disabled) {
+  background-color: transparent;
+  color: rgba(194, 206, 223, 0.5);
+}
+
+:is(.dark .btn-link:disabled)::after,:is(.dark  .btn-link.disabled)::after {
+  content: var(--tw-content);
+  background-color: rgba(194, 206, 223, 0.5);
+}
+
+.btn-operational:disabled, .btn-operational.disabled {
+  background-color: transparent;
+  --tw-text-opacity: 1;
+  color: rgb(186 190 194 / var(--tw-text-opacity));
+}
+
+:is(.dark .btn-operational:disabled),:is(.dark  .btn-operational.disabled) {
+  background-color: transparent;
+  color: rgba(194, 206, 223, 0.5);
+}
+
+.btn-operational:disabled svg:hover, .btn-operational.disabled svg:hover {
+  fill: #BABEC2;
+}
+
+:is(.dark .btn-operational:disabled svg:hover),:is(.dark  .btn-operational.disabled svg:hover) {
+  fill: rgba(194, 206, 223, 0.5);
 }
 
 .form-group {
@@ -1122,6 +1203,11 @@ label {
   color: rgb(141 141 141 / var(--tw-text-opacity));
 }
 
+.text-disabled-light {
+  --tw-text-opacity: 1;
+  color: rgb(186 190 194 / var(--tw-text-opacity));
+}
+
 .text-gray-dark {
   --tw-text-opacity: 1;
   color: rgb(17 17 17 / var(--tw-text-opacity));
@@ -1177,10 +1263,21 @@ label {
   height: 1px;
 }
 
+.after\:w-full::after {
+  content: var(--tw-content);
+  width: 100%;
+}
+
 .after\:bg-blue-medium::after {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
   background-color: rgb(0 55 120 / var(--tw-bg-opacity));
+}
+
+.after\:bg-disabled-light::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(186 190 194 / var(--tw-bg-opacity));
 }
 
 .after\:content-\[\'\'\]::after {
@@ -1210,6 +1307,14 @@ label {
 
 .hover\:to-bell-primary:hover {
   --tw-gradient-to: #00549A var(--tw-gradient-to-position);
+}
+
+.hover\:fill-bell-primary:hover {
+  fill: #00549A;
+}
+
+.hover\:fill-disabled-light:hover {
+  fill: #BABEC2;
 }
 
 .hover\:text-bell-primary:hover {
@@ -1299,6 +1404,10 @@ label {
   --tw-gradient-to: rgba(255, 255, 255, .3) var(--tw-gradient-to-position);
 }
 
+:is(.dark .dark\:text-blue-light-50) {
+  color: rgba(194, 206, 223, 0.5);
+}
+
 :is(.dark .dark\:text-blue-medium) {
   --tw-text-opacity: 1;
   color: rgb(0 55 120 / var(--tw-text-opacity));
@@ -1312,6 +1421,12 @@ label {
 :is(.dark .dark\:ring-white) {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+}
+
+:is(.dark .dark\:after\:bg-white)::after {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 :is(.dark .dark\:hover\:border-blue-light:hover) {
@@ -1344,4 +1459,9 @@ label {
 :is(.dark .dark\:hover\:text-blue-light:hover) {
   --tw-text-opacity: 1;
   color: rgb(194 206 223 / var(--tw-text-opacity));
+}
+
+:is(.dark .dark\:hover\:text-blue-lighter:hover) {
+  --tw-text-opacity: 1;
+  color: rgb(228 240 249 / var(--tw-text-opacity));
 }

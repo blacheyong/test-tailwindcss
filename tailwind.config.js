@@ -17,6 +17,7 @@ export const theme = {
         'dark': '#00215E',
         'light': '#C2CEDF',
         'light-50': 'rgba(194, 206, 223, 0.5)',
+        'lighter': '#E4F0F9',
         'medium': '#003778',
         'medium-90': 'rgba(0, 55, 120, .9)',
         'electric': '#0075FF'

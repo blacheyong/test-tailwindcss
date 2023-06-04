@@ -12,14 +12,14 @@
   }
 
   .btn-link {
-    @apply bg-transparent hover:bg-transparent border-0 p-0 relative rounded-3px text-14 text-blue-medium hover:text-bell-primary after:content-[''] after:block after:h-px after:bg-blue-medium hover:after:bg-bell-primary after:absolute after:bottom-0 after:w-full;
+    @apply bg-transparent hover:bg-transparent border-0 p-0 relative rounded-3px text-14 text-blue-medium hover:text-bell-primary after:content-[''] after:block after:h-px after:bg-blue-medium hover:after:bg-bell-primary after:absolute after:bottom-0 after:w-full dark:bg-transparent dark:hover:bg-transparent dark:text-white dark:hover:text-blue-lighter dark:after:bg-white dark:hover:after:bg-blue-lighter;
   }
 
   .btn-operational {
-    @apply bg-transparent hover:bg-transparent border-0 font-bold  p-0 text-12 text-blue-medium hover:text-bell-primary flex items-center;
+    @apply bg-transparent hover:bg-transparent border-0 font-bold  p-0 text-12 text-blue-medium hover:text-bell-primary flex items-center dark:bg-transparent dark:hover:bg-transparent dark:text-white dark:hover:text-blue-lighter;
   }
   .btn-operational svg {
-    @apply max-w-16px ml-5px hover:fill-bell-primary;
+    @apply max-w-16px ml-5px hover:fill-bell-primary dark:hover:fill-blue-lighter;
   }
   .btn-operational--left svg {
     @apply mr-5px;
@@ -32,13 +32,26 @@
     @apply text-lg px-23px py-9px;
   }
 
-  .btn:disabled {
+  .btn:disabled, .btn.disabled {
     @apply bg-disabled-light border-disabled-light cursor-not-allowed select-none focus:ring-0 focus:ring-offset-0 dark:bg-white-30 dark:border-white-30 dark:text-blue-light-50;
   }
-  .btn-primary:disabled {
+
+  .btn-primary:disabled, .btn-primary.disabled {
     @apply bg-gradient-to-b from-disabled-light to-disabled-light dark:from-white-30 dark:to-white-30 dark:border-white-30 dark:text-blue-light-50;
   }
-  .btn-secondary:disabled {
+
+  .btn-secondary:disabled, .btn-secondary.disabled {
     @apply bg-transparent text-disabled-dark border-disabled-light dark:bg-transparent dark:border-blue-light-50 dark:text-blue-light-50;
+  }
+
+  .btn-link:disabled, .btn-link.disabled {
+    @apply bg-transparent text-disabled-light after:bg-disabled-light dark:bg-transparent dark:text-blue-light-50 dark:after:bg-blue-light-50;
+  }
+
+  .btn-operational:disabled, .btn-operational.disabled {
+    @apply bg-transparent text-disabled-light dark:bg-transparent dark:text-blue-light-50;
+  }
+  .btn-operational:disabled svg, .btn-operational.disabled svg {
+    @apply hover:fill-disabled-light dark:hover:fill-blue-light-50;
   }
 }
