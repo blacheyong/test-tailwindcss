@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export const content = ["./src/**/*.{js,scss}", "index.html"]
+export const darkMode = 'class'
 export const theme = {
   extend: {
     borderRadius: {
@@ -15,6 +16,7 @@ export const theme = {
         'bell': 'bell-primary',
         'dark': '#00215E',
         'light': '#C2CEDF',
+        'light-50': 'rgba(194, 206, 223, 0.5)',
         'medium': '#003778',
         'medium-90': 'rgba(0, 55, 120, .9)',
         'electric': '#0075FF'
@@ -31,7 +33,10 @@ export const theme = {
         'keyline': '#D4D4D4',
         'medium': '#555555',
       },
-      'light': '#F4F4F4'
+      'light': '#F4F4F4',
+      'white-90': 'rgba(255, 255, 255, .9)',
+      'white-80': 'rgba(255, 255, 255, .8)',
+      'white-30': 'rgba(255, 255, 255, .3)'
     },
     fontFamily: {
       'base': ['Arial', 'Helvetica', 'sans-serif'],

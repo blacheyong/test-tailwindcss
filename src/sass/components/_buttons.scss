@@ -1,14 +1,14 @@
 @layer components {
   .btn {
-    @apply bg-blue-medium hover:bg-bell-primary border-1 border-blue-medium hover:border-bell-primary font-base text-center text-md text-white px-19px py-9px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-3 focus:outline-none;
+    @apply bg-blue-medium hover:bg-bell-primary border-1 border-blue-medium hover:border-bell-primary font-base text-center text-md text-white px-19px py-9px rounded-lg transition ease-in-out duration-300 focus:ring-2 ring-blue-electric ring-offset-3 focus:outline-none dark:bg-white dark:border-white dark:hover:border-white-80 dark:text-blue-medium dark:hover:bg-white-80 dark:ring-white dark:ring-offset-blue-medium;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-b from-blue-medium-90 to-blue-medium hover:from-bell-primary-90 hover:to-bell-primary;
+    @apply bg-gradient-to-b from-blue-medium-90 to-blue-medium hover:from-bell-primary-90 hover:to-bell-primary dark:from-white-90 dark:to-white dark:hover:from-white-80 dark:hover:to-white-80 dark:hover:border-white-80;
   }
 
   .btn-secondary {
-    @apply bg-transparent hover:bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary;
+    @apply bg-transparent hover:bg-transparent text-blue-medium border-1 hover:text-bell-primary border-blue-medium hover:border-bell-primary dark:bg-transparent dark:text-white dark:hover:bg-transparent dark:hover:border-blue-light dark:hover:text-blue-light dark:ring-offset-blue-medium;
   }
 
   .btn-link {
@@ -33,12 +33,12 @@
   }
 
   .btn:disabled {
-    @apply bg-disabled-light border-disabled-light cursor-not-allowed select-none focus:ring-0 focus:ring-offset-0;
+    @apply bg-disabled-light border-disabled-light cursor-not-allowed select-none focus:ring-0 focus:ring-offset-0 dark:bg-white-30 dark:border-white-30 dark:text-blue-light-50;
   }
   .btn-primary:disabled {
-    @apply bg-gradient-to-b from-disabled-light to-disabled-light;
+    @apply bg-gradient-to-b from-disabled-light to-disabled-light dark:from-white-30 dark:to-white-30 dark:border-white-30 dark:text-blue-light-50;
   }
   .btn-secondary:disabled {
-    @apply bg-transparent text-disabled-dark border-disabled-light;
+    @apply bg-transparent text-disabled-dark border-disabled-light dark:bg-transparent dark:border-blue-light-50 dark:text-blue-light-50;
   }
 }
