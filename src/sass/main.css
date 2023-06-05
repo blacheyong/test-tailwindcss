@@ -1,0 +1,22 @@
+/* --------------------------------- */
+/* Tailwind                          */
+/* --------------------------------- */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* --------------------------------- */
+/* Settings                          */
+/* --------------------------------- */
+@import "settings/_fonts.css";
+
+/* --------------------------------- */
+/* Base                              */
+/* --------------------------------- */
+@import "base/_typography.css";
+
+/* --------------------------------- */
+/* Components                        */
+/* --------------------------------- */
+@import "components/_buttons.css";
+@import "components/_form.css";

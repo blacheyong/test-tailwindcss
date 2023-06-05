@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "dev": "npx tailwindcss -i ./src/sass/main.scss -o ./dist/main.css --watch"
+    "dev": "npx tailwindcss -i ./src/sass/main.css -o ./dist/main.css --watch"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
