@@ -471,7 +471,7 @@ h6, .subtitle-2 {
   line-height: 18px;
 }
 
-input[type='text'], input[type='date'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], input[type='week'] {
+input[type='text'], input[type='date'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], input[type='week'], select {
   border-radius: 0.25rem;
   border-width: 1px;
   --tw-border-opacity: 1;
@@ -495,7 +495,7 @@ input[type='text'], input[type='date'], input[type='datetime-local'], input[type
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-input[type='text']:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='time']:focus, input[type='url']:focus, input[type='week']:focus {
+input[type='text']:focus, input[type='date']:focus, input[type='datetime-local']:focus, input[type='email']:focus, input[type='month']:focus, input[type='number']:focus, input[type='password']:focus, input[type='search']:focus, input[type='tel']:focus, input[type='time']:focus, input[type='url']:focus, input[type='week']:focus, select:focus {
   --tw-border-opacity: 1;
   border-color: rgb(0 84 154 / var(--tw-border-opacity));
   outline: 2px solid transparent;
@@ -506,20 +506,25 @@ input[type='text']:focus, input[type='date']:focus, input[type='datetime-local']
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
-:is(.dark input[type='text']),:is(.dark  input[type='date']),:is(.dark  input[type='datetime-local']),:is(.dark  input[type='email']),:is(.dark  input[type='month']),:is(.dark  input[type='number']),:is(.dark  input[type='password']),:is(.dark  input[type='search']),:is(.dark  input[type='tel']),:is(.dark  input[type='time']),:is(.dark  input[type='url']),:is(.dark  input[type='week']) {
+:is(.dark input[type='text']),:is(.dark  input[type='date']),:is(.dark  input[type='datetime-local']),:is(.dark  input[type='email']),:is(.dark  input[type='month']),:is(.dark  input[type='number']),:is(.dark  input[type='password']),:is(.dark  input[type='search']),:is(.dark  input[type='tel']),:is(.dark  input[type='time']),:is(.dark  input[type='url']),:is(.dark  input[type='week']),:is(.dark  select) {
   --tw-border-opacity: 1;
-  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
   --tw-ring-offset-color: #003778;
 }
 
-input[type='text']:disabled, input[type='date']:disabled, input[type='datetime-local']:disabled, input[type='email']:disabled, input[type='month']:disabled, input[type='number']:disabled, input[type='password']:disabled, input[type='search']:disabled, input[type='tel']:disabled, input[type='time']:disabled, input[type='url']:disabled, input[type='week']:disabled {
+input[type='text']:disabled, input[type='date']:disabled, input[type='datetime-local']:disabled, input[type='email']:disabled, input[type='month']:disabled, input[type='number']:disabled, input[type='password']:disabled, input[type='search']:disabled, input[type='tel']:disabled, input[type='time']:disabled, input[type='url']:disabled, input[type='week']:disabled, select:disabled {
   cursor: not-allowed;
   --tw-border-opacity: 1;
   border-color: rgb(212 212 212 / var(--tw-border-opacity));
   --tw-bg-opacity: 1;
   background-color: rgb(244 244 244 / var(--tw-bg-opacity));
+}
+
+select {
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 label {
@@ -1393,6 +1398,11 @@ label {
 
 .focus\:ring-offset-0:focus {
   --tw-ring-offset-width: 0px;
+}
+
+:is(.dark .dark\:border-black) {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
 }
 
 :is(.dark .dark\:border-blue-light-50) {
