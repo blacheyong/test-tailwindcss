@@ -16,7 +16,7 @@
   }
 
   .btn-operational {
-    @apply bg-transparent hover:bg-transparent border-0 font-bold  p-0 text-12 text-blue-medium hover:text-bell-primary flex items-center dark:bg-transparent dark:hover:bg-transparent dark:text-white dark:hover:text-blue-lighter;
+    @apply bg-transparent hover:bg-transparent border-0 font-bold p-0 text-12 text-blue-medium hover:text-bell-primary flex items-center dark:bg-transparent dark:hover:bg-transparent dark:text-white dark:hover:text-blue-lighter;
   }
   .btn-operational svg {
     @apply max-w-16px ml-5px hover:fill-bell-primary dark:hover:fill-blue-lighter;
