@@ -3,6 +3,9 @@ export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const darkMode = 'class'
 export const theme = {
   extend: {
+    backgroundImage: {
+      'dropdown-arrow': 'url("./svg/icon-dropdown-arrow.svg")'
+    },
     borderRadius: {
       '3px': '3px'
     },
@@ -49,7 +52,7 @@ export const theme = {
       lg: ['18px', '20px'], // used in large buttons
       '12': ['12px', '14px'],
       '14': ['14px', '18px'],
-      '18': ['18px', '22px'], // same font-size as lg, but not same line-height...
+      '18': ['18px', '22px'], // same font-size as lg, but different line-height...
       '20': ['20px', '22px'],
       '24': ['24px', '26px'],
       '32': ['32px', '38px'],
@@ -81,6 +84,13 @@ export const theme = {
     ringOffsetWidth: {
       3: '3px',
       5: '5px'
+    },
+    screens: {
+      sm: {'max': '575.98px'},
+      md: {'max': '767.98px'},
+      lg: {'max': '991.98px'},
+      xl: {'max': '1199.98px'},
+      xxl: {'max': '1399.98px'},
     }
   }
 }

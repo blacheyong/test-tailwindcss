@@ -1,25 +1,44 @@
 @layer base {
+    h1, .headline-1,
+    h2, .headline-2,
+    h3, .headline-3,
+    h4, .headline-4,
+    h5, .subtitle-1,
+    h6, .subtitle-2 {
+        @apply text-gray-dark;
+    }
+    h1, .headline-1,
+    h2, .headline-2,
+    h3, .headline-3,
+    h4, .headline-4 {
+        @apply font-bell-slim-black;
+    }
+    h5, .subtitle-1,
+    h6, .subtitle-2 {
+        @apply font-base;
+    }
+
     h1, .headline-1 {
-        @apply font-bell-slim-black text-40 tracking-tightest;
+        @apply text-40 tracking-tightest lg:text-32 lg:tracking-tighter;
     }
 
     h2, .headline-2 {
-        @apply font-bell-slim-black text-32 tracking-tighter;
+        @apply text-32 tracking-tighter lg:text-24 lg:tracking-tight;
     }
 
     h3, .headline-3 {
-        @apply font-bell-slim-black text-24 tracking-tight;
+        @apply text-24 tracking-tight;
     }
 
     h4, .headline-4 {
-        @apply font-bell-slim-black text-20;
+        @apply text-20;
     }
 
     h5, .subtitle-1 {
-        @apply font-base text-18;
+        @apply text-18 lg:text-20;
     }
 
     h6, .subtitle-2 {
-        @apply font-base text-14;
+        @apply text-14;
     }
 }
