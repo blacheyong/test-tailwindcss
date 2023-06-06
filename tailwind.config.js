@@ -1,4 +1,10 @@
 /** @type {import('tailwindcss').Config} */
+
+const { filterTokensByType } = require("./fns");
+const tokens = require("./output/_tokens.json")
+
+const colors = filterTokensByType('color', tokens)
+
 export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const darkMode = 'class'
 export const theme = {
@@ -12,7 +18,7 @@ export const theme = {
     borderWidth: {
       '1': '1px'
     },
-    colors: {
+    /*colors: {
       'bell-primary': '#00549A',
       'bell-primary-90': 'rgba(0, 84, 154, .9)',
       'blue': {
@@ -41,7 +47,8 @@ export const theme = {
       'white-90': 'rgba(255, 255, 255, .9)',
       'white-80': 'rgba(255, 255, 255, .8)',
       'white-30': 'rgba(255, 255, 255, .3)'
-    },
+    },*/
+    colors: colors,
     fontFamily: {
       'base': ['Arial', 'Helvetica', 'sans-serif'],
       'bell-slim-black': ['bell-slim-black', 'Helvetica', 'Arial', 'sans-serif']

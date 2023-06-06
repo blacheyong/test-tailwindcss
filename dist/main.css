@@ -1074,6 +1074,10 @@ label {
   background-color: rgb(0 55 120 / var(--tw-bg-opacity));
 }
 
+.p-4 {
+  padding: 1rem;
+}
+
 .p-6 {
   padding: 1.5rem;
 }
