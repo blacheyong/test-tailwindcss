@@ -971,12 +971,13 @@ label {
 }
 
 :is(.dark .btn-primary:disabled),:is(.dark  .btn-primary.disabled) {
-  border-color: rgba(255, 255, 255, .3);
+  border-color: transparent;
   --tw-gradient-from: rgba(255, 255, 255, .3) var(--tw-gradient-from-position);
   --tw-gradient-to: rgba(255, 255, 255, 0) var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
   --tw-gradient-to: rgba(255, 255, 255, .3) var(--tw-gradient-to-position);
-  color: rgba(194, 206, 223, 0.5);
+  --tw-text-opacity: 1;
+  color: rgb(194 206 223 / var(--tw-text-opacity));
 }
 
 .btn-secondary:disabled, .btn-secondary.disabled {
