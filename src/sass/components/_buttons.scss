@@ -37,7 +37,7 @@
   }
 
   .btn-primary:disabled, .btn-primary.disabled {
-    @apply bg-gradient-to-b from-disabled-light to-disabled-light dark:from-white-30 dark:to-white-30 dark:border-white-30 dark:text-blue-light-50;
+    @apply bg-gradient-to-b from-disabled-light to-disabled-light dark:from-white-30 dark:to-white-30 dark:border-transparent dark:text-blue-light;
   }
 
   .btn-secondary:disabled, .btn-secondary.disabled {
