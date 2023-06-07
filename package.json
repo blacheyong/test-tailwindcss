@@ -4,7 +4,7 @@
     "build-tokens": "npm run tokens-global && node ./build.js",
     "copy-files": "copyfiles -u 1 \"src/fonts/**/*\" \"src/svg/**/*\" dist",
     "sync": "browser-sync start --server --files \"**/*\"",
-    "tailwind": "npx tailwindcss -i ./src/sass/main.css -o ./dist/main.css --watch",
+    "tailwind": "npx tailwindcss -i ./src/styles/main.css -o ./dist/main.css --watch",
     "start": "npm run copy-files && npm run tailwind && browser-sync start --server './' --files 'dist/**/*'",
     "dev": "run-p  copy-files tailwind sync"
   },
