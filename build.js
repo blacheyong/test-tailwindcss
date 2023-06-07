@@ -24,7 +24,6 @@ StyleDictionaryPackage.registerTransform({
     });
 
 function getStyleDictionaryConfig(theme) {
-  console.log(theme)
   return {
     "source": [
       `tokens/${theme}.json`,

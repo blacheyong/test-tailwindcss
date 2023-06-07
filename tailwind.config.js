@@ -4,7 +4,7 @@ const { filterTokensByType } = require("./fns");
 const tokens = require("./output/_tokens.json")
 
 const colors = filterTokensByType('color', tokens)
-
+console.log(colors)
 export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const darkMode = 'class'
 export const theme = {
