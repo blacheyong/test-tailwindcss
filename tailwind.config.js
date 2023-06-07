@@ -18,17 +18,14 @@ export const theme = {
     borderWidth: {
       '1': '1px'
     },
-    /*colors: {
-      'bell-primary': '#00549A',
-      'bell-primary-90': 'rgba(0, 84, 154, .9)',
+    colors: {
+      'primary': '#00549A',
       'blue': {
-        'bell': 'bell-primary',
+        'bell': 'primary',
         'dark': '#00215E',
         'light': '#C2CEDF',
-        'light-50': 'rgba(194, 206, 223, 0.5)',
         'lighter': '#E4F0F9',
         'medium': '#003778',
-        'medium-90': 'rgba(0, 55, 120, .9)',
         'electric': '#0075FF'
       },
       'dark': '#16191C',
@@ -43,12 +40,8 @@ export const theme = {
         'keyline': '#D4D4D4',
         'medium': '#555555',
       },
-      'light': '#F4F4F4',
-      'white-90': 'rgba(255, 255, 255, .9)',
-      'white-80': 'rgba(255, 255, 255, .8)',
-      'white-30': 'rgba(255, 255, 255, .3)'
-    },*/
-    colors: colors,
+      'light': '#F4F4F4'
+    },
     fontFamily: {
       'base': ['Arial', 'Helvetica', 'sans-serif'],
       'bell-slim-black': ['bell-slim-black', 'Helvetica', 'Arial', 'sans-serif']
@@ -92,12 +85,5 @@ export const theme = {
       3: '3px',
       5: '5px'
     },
-    screens: {
-      sm: {'max': '575.98px'},
-      md: {'max': '767.98px'},
-      lg: {'max': '991.98px'},
-      xl: {'max': '1199.98px'},
-      xxl: {'max': '1399.98px'},
-    }
   }
 }
