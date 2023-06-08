@@ -59,6 +59,16 @@
         "value": "#555555",
         "type": "color"
       }
+    },
+    "disabled": {
+      "dark": {
+        "value": "#c2cedf80;",
+        "type": "color"
+      },
+      "light": {
+        "value": "#babec2",
+        "type": "color"
+      }
     }
   }
 }

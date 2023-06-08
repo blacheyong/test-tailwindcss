@@ -13,4 +13,6 @@
   --colors-gray-light-text: #999999;
   --colors-gray-keyline: #D4D4D4;
   --colors-gray-medium: #555555;
+  --colors-disabled-dark: #c2cedf80;;
+  --colors-disabled-light: #babec2;
 }

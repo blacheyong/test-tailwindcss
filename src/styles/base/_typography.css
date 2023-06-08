@@ -2,20 +2,8 @@
     h1, .headline-1,
     h2, .headline-2,
     h3, .headline-3,
-    h4, .headline-4,
-    h5, .subtitle-1,
-    h6, .subtitle-2 {
-        @apply text-gray-dark;
-    }
-    h1, .headline-1,
-    h2, .headline-2,
-    h3, .headline-3,
     h4, .headline-4 {
         @apply font-bell-slim-black;
-    }
-    h5, .subtitle-1,
-    h6, .subtitle-2 {
-        @apply font-base;
     }
 
     h1, .headline-1 {

@@ -26,10 +26,11 @@ function createArray({ dictionary, platform }) {
 }
 
 function filterTokensByType(type, tokens) {
-  console.log(typeof(tokens))
+  // console.log(typeof(tokens))
   const obj = tokens.reduce((acc, cur) => {
     if (cur.type === type) {
-      acc[cur.path.join(".")] = `var(--${cur.name}, ${cur.value})`
+      // acc[cur.path.join(".")] = `var(--${cur.name}, ${cur.value})` // should have quotes around the value? And needs to be in :root ?
+      acc[cur.path.join(".")] = `${cur.value}`
     }
     return acc
   }, {})

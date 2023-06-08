@@ -3,8 +3,8 @@
 const { filterTokensByType } = require("./fns");
 const tokens = require("./output/_tokens.json")
 
-const colors = filterTokensByType('color', tokens)
-console.log(colors)
+const colorTokens = filterTokensByType('color', tokens)
+
 export const content = ["./src/**/*.{js,scss}", "index.html"]
 export const darkMode = 'class'
 export const theme = {
@@ -18,30 +18,7 @@ export const theme = {
     borderWidth: {
       '1': '1px'
     },
-    colors: {
-      'primary': '#00549A',
-      'blue': {
-        'bell': 'primary',
-        'dark': '#00215E',
-        'light': '#C2CEDF',
-        'lighter': '#E4F0F9',
-        'medium': '#003778',
-        'electric': '#0075FF'
-      },
-      'dark': '#16191C',
-      'disabled': {
-        'dark': '#8D8D8D',
-        'light': '#BABEC2'
-      },
-      'gray': {
-        'dark': '#111111',
-        'light': '#E1E1E1',
-        'light-text': '#999999',
-        'keyline': '#D4D4D4',
-        'medium': '#555555',
-      },
-      'light': '#F4F4F4'
-    },
+    colors: colorTokens.colors,
     fontFamily: {
       'base': ['Arial', 'Helvetica', 'sans-serif'],
       'bell-slim-black': ['bell-slim-black', 'Helvetica', 'Arial', 'sans-serif']
@@ -85,5 +62,8 @@ export const theme = {
       3: '3px',
       5: '5px'
     },
+    screens: {
+      lg: '992px'
+    }
   }
 }
