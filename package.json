@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "tokens-global": "token-transformer data/tokens.json tokens/_tokens.json global --expandTypography",
+    "tokens-global": "token-transformer data/tokens.json tokens/_tokens.json global",
     "build-tokens": "npm run tokens-global && node ./build.js",
     "copy-files": "copyfiles -u 1 \"src/fonts/**/*\" \"src/svg/**/*\" dist",
     "sync": "browser-sync start --server --files \"**/*\"",

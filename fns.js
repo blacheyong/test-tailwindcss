@@ -26,7 +26,6 @@ function createArray({ dictionary, platform }) {
 }
 
 function filterTokensByType(type, tokens) {
-  // console.log(typeof(tokens))
   const obj = tokens.reduce((acc, cur) => {
     if (cur.type === type) {
       // acc[cur.path.join(".")] = `var(--${cur.name}, ${cur.value})` // should have quotes around the value? And needs to be in :root ?
@@ -39,4 +38,20 @@ function filterTokensByType(type, tokens) {
   return deep
 }
 
-module.exports = { createArray, filterTokensByType };
+function filterArrayTokensByType(type, tokens) {
+  const obj = tokens.reduce((acc, cur) => {
+    if (cur.type === type) {
+      acc[cur.path.join(".")] = [cur.value.fontSize, {
+        lineHeight: cur.value.lineHeight,
+        letterSpacing: cur.value.letterSpacing,
+        fontWeight: cur.value.fontWeight
+      }]
+    }
+    return acc
+  }, {})
+
+  const deep = deepen(obj)
+  return deep
+}
+
+module.exports = { createArray, filterArrayTokensByType, filterTokensByType };

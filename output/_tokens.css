@@ -15,4 +15,25 @@
   --colors-gray-medium: #555555;
   --colors-disabled-dark: #c2cedf80;;
   --colors-disabled-light: #babec2;
+  --headline-xl-desktop: [object Object];
+  --headline-xl-tablet: [object Object];
+  --headline-xl-mobile: [object Object];
+  --headline-lg-desktop: [object Object];
+  --headline-lg-tablet: [object Object];
+  --headline-lg-mobile: [object Object];
+  --headline-md-desktop: [object Object];
+  --font-familiy-headline: BellSlim;
+  --font-familiy-body: Arial;
+  --font-weight-headline: Black;
+  --headline-md-tablet: [object Object];
+  --headline-md-mobile: [object Object];
+  --headline-sm: [object Object];
+  --headline-xs: [object Object];
+  --body-default: [object Object];
+  --body-lg: [object Object];
+  --body-sm: [object Object];
+  --buttons-default: [object Object];
+  --buttons-lg: [object Object];
+  --buttons-sm: [object Object];
+  --buttons-operational: [object Object];
 }

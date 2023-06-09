@@ -427,11 +427,21 @@ video {
 }
 
 @font-face {
-  font-family: 'bell-slim-black';
+  font-family: 'bell-slim';
 
   src: url('./fonts/bellslim_black-webfont.woff') format('woff'), url('../../fonts/bellslim_black-webfont.woff2') format('woff2');
 
-  font-weight: normal;
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bell-slim';
+
+  src: url('./fonts/bellslim_medium-webfont.woff') format('woff'), url('../../fonts/bellslim_medium-webfont.woff2') format('woff2');
+
+  font-weight: 400;
 
   font-style: normal;
 }
@@ -442,67 +452,99 @@ body {
   color: rgb(17 17 17 / var(--tw-text-opacity));
 }
 
-h1, .headline-1,
-    h2, .headline-2,
-    h3, .headline-3,
-    h4, .headline-4 {
-  font-family: bell-slim-black, Helvetica, Arial, sans-serif;
+h1, .headline-xl,
+    h2, .headline-lg,
+    h3, .headline-md {
+  font-family: bell-slim, Helvetica, Arial, sans-serif;
 }
 
-h1, .headline-1 {
-  font-size: 32px;
-  line-height: 38px;
-  letter-spacing: -0.5px;
+h1, .headline-xl {
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: -0.4 px;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  h1, .headline-xl {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.5 px;
+    font-weight: 900;
+  }
 }
 
 @media (min-width: 992px) {
-  h1, .headline-1 {
+  h1, .headline-xl {
     font-size: 40px;
     line-height: 46px;
     letter-spacing: -0.7px;
+    font-weight: 900;
   }
 }
 
-h2, .headline-2 {
-  font-size: 24px;
-  line-height: 26px;
+h2, .headline-lg {
+  font-size: 26px;
+  line-height: 28px;
   letter-spacing: -0.4px;
+  font-weight: 900;
 }
 
-@media (min-width: 992px) {
-  h2, .headline-2 {
+@media (min-width: 768px) {
+  h2, .headline-lg {
     font-size: 32px;
     line-height: 38px;
     letter-spacing: -0.5px;
+    font-weight: 900;
   }
-}
-
-h3, .headline-3 {
-  font-size: 24px;
-  line-height: 26px;
-  letter-spacing: -0.4px;
-}
-
-h4, .headline-4 {
-  font-size: 20px;
-  line-height: 22px;
-}
-
-h5, .subtitle-1 {
-  font-size: 20px;
-  line-height: 22px;
 }
 
 @media (min-width: 992px) {
-  h5, .subtitle-1 {
-    font-size: 18px;
-    line-height: 22px;
+  h2, .headline-lg {
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: -0.5px;
+    font-weight: 900;
   }
 }
 
-h6, .subtitle-2 {
-  font-size: 14px;
-  line-height: 18px;
+h3, .headline-md {
+  font-size: 22px;
+  line-height: 24px;
+  letter-spacing: -0.4px;
+  font-weight: 900;
+}
+
+@media (min-width: 768px) {
+  h3, .headline-md {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    font-weight: 900;
+  }
+}
+
+@media (min-width: 992px) {
+  h3, .headline-md {
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: -0.4px;
+    font-weight: 900;
+  }
+}
+
+h4, .headline-sm {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 700;
+}
+
+h5, .headline-xs {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 input[type='text'], input[type='date'], input[type='datetime-local'], input[type='email'], input[type='month'], input[type='number'], input[type='password'], input[type='search'], input[type='tel'], input[type='time'], input[type='url'], input[type='week'], select {
@@ -516,6 +558,8 @@ input[type='text'], input[type='date'], input[type='datetime-local'], input[type
   padding-bottom: 8px;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(85 85 85 / var(--tw-text-opacity));
   --tw-ring-opacity: 1;
@@ -570,6 +614,7 @@ label {
   margin-bottom: 5px;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0;
   font-weight: 700;
 }
 
@@ -691,6 +736,8 @@ label {
   padding-bottom: 9px;
   font-size: 15px;
   line-height: 16px;
+  letter-spacing: 0;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
   --tw-ring-opacity: 1;
@@ -805,6 +852,8 @@ label {
   padding: 0px;
   font-size: 14px;
   line-height: 18px;
+  letter-spacing: 0;
+  font-weight: 400;
   --tw-text-opacity: 1;
   color: rgb(0 55 120 / var(--tw-text-opacity));
 }
@@ -865,6 +914,7 @@ label {
   padding: 0px;
   font-size: 12px;
   line-height: 14px;
+  letter-spacing: 0;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(0 55 120 / var(--tw-text-opacity));
@@ -912,6 +962,8 @@ label {
   padding-right: 17px;
   font-size: 13px;
   line-height: 14px;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 .btn-lg {
@@ -921,6 +973,8 @@ label {
   padding-bottom: 9px;
   font-size: 18px;
   line-height: 20px;
+  letter-spacing: 0;
+  font-weight: 400;
 }
 
 .btn:disabled, .btn.disabled {

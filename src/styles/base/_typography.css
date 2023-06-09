@@ -1,32 +1,27 @@
 @layer base {
-    h1, .headline-1,
-    h2, .headline-2,
-    h3, .headline-3,
-    h4, .headline-4 {
-        @apply font-bell-slim-black;
+    h1, .headline-xl,
+    h2, .headline-lg,
+    h3, .headline-md {
+        @apply font-bell-slim;
     }
 
-    h1, .headline-1 {
-        @apply text-32 tracking-tighter lg:text-40 lg:tracking-tightest;
+    h1, .headline-xl {
+        @apply text-headline-xl-mobile md:text-headline-xl-tablet lg:text-headline-xl-desktop;
     }
 
-    h2, .headline-2 {
-        @apply text-24 tracking-tight lg:text-32 lg:tracking-tighter;
+    h2, .headline-lg {
+        @apply text-headline-lg-mobile md:text-headline-lg-tablet lg:text-headline-lg-desktop;
     }
 
-    h3, .headline-3 {
-        @apply text-24 tracking-tight;
+    h3, .headline-md {
+        @apply text-headline-md-mobile md:text-headline-md-tablet lg:text-headline-md-desktop;
     }
 
-    h4, .headline-4 {
-        @apply text-20;
+    h4, .headline-sm {
+        @apply text-headline-sm;
     }
 
-    h5, .subtitle-1 {
-        @apply text-20 lg:text-18;
-    }
-
-    h6, .subtitle-2 {
-        @apply text-14;
+    h5, .headline-xs {
+        @apply text-headline-xs
     }
 }
