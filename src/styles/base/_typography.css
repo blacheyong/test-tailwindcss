@@ -1,27 +1,27 @@
 @layer base {
-    h1, .headline-xl,
-    h2, .headline-lg,
-    h3, .headline-md {
+    .headline-xl,
+    .headline-lg,
+    .headline-md {
         @apply font-bell-slim;
     }
 
-    h1, .headline-xl {
+    .headline-xl {
         @apply text-headline-xl-mobile md:text-headline-xl-tablet lg:text-headline-xl-desktop;
     }
 
-    h2, .headline-lg {
+    .headline-lg {
         @apply text-headline-lg-mobile md:text-headline-lg-tablet lg:text-headline-lg-desktop;
     }
 
-    h3, .headline-md {
+    .headline-md {
         @apply text-headline-md-mobile md:text-headline-md-tablet lg:text-headline-md-desktop;
     }
 
-    h4, .headline-sm {
+    .headline-sm {
         @apply text-headline-sm;
     }
 
-    h5, .headline-xs {
+    .headline-xs {
         @apply text-headline-xs
     }
 }

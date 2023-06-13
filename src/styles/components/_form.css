@@ -14,7 +14,7 @@
     }
 
     select {
-        @apply appearance-none bg-dropdown-arrow bg-[right_10px_center] bg-no-repeat px-7px;
+        @apply bg-dropdown-arrow bg-[right_10px_center] bg-[length:10px] bg-no-repeat px-7px;
     }
 
     label {
